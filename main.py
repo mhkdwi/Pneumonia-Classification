@@ -86,6 +86,6 @@ if uploaded_file is not None:
 
 else:
     st.markdown(
-        "<p style='color:#FFFF; font-size:18px; text-align:center;'>👆 Please upload an image file (JPG or PNG) to start the classification.</p>",
+        "<p style='color:#FFFF; font-size:18px; text-align:center;'>👆 Please upload an image file (JPG, JPEG, or PNG) to start the classification.</p>",
         unsafe_allow_html=True
     )
