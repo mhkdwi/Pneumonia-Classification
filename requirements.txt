@@ -1,18 +1,9 @@
-# === Core ML and TensorFlow ===
 tensorflow==2.20.0
-keras==3.6.0
-
-# === Streamlit Web App ===
+keras>=3.10.0
 streamlit==1.39.0
-
-# === Image & Array Processing ===
 pillow==10.4.0
 numpy==1.26.4
-
-# === Utility / Optional (safe defaults) ===
-protobuf==5.27.0
+protobuf>=5.28.0
 h5py==3.11.0
-
-# === For deployment & compatibility ===
 typing-extensions>=4.10.0
 packaging>=24.0
