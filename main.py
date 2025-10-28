@@ -4,7 +4,6 @@ from PIL import Image
 import numpy as np
 from util import classify, set_background
 
-
 # ---- Setup Halaman ----
 st.set_page_config(page_title="Pneumonia Classifier", page_icon="🩺", layout="centered")
 
@@ -25,9 +24,11 @@ st.markdown(
 # ---- Load model dengan cache ----
 @st.cache_resource
 def load_pneumonia_model():
+    # GUNAKAN path relatif, bukan path Windows
     model = TFSMLayer(
-        r"D:\Code\Github\Pneunomia Classification\pneumonia_model_tf",
-        call_endpoint="serving_default")
+        "./model/pneumonia_model_tf",
+        call_endpoint="serving_default"
+    )
     return model
 
 model = load_pneumonia_model()
@@ -74,9 +75,8 @@ if uploaded_file is not None:
             unsafe_allow_html=True
         )
 
-
 else:
     st.markdown(
-    "<p style='color:#FFFF; font-size:18px; text-align:center;'>👆 Please upload an image file (JPG or PNG) to start the classification.</p>",
-    unsafe_allow_html=True)
-
+        "<p style='color:#FFFF; font-size:18px; text-align:center;'>👆 Please upload an image file (JPG or PNG) to start the classification.</p>",
+        unsafe_allow_html=True
+    )
