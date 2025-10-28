@@ -47,7 +47,7 @@ if uploaded_file is not None:
     try:
         # Buka gambar pakai PIL
         image = Image.open(uploaded_file).convert('RGB')
-        st.image(np.array(image), caption="Preview", use_container_width=True)
+        st.image(np.array(image), caption="Preview", use_column_width=True)
     except Exception as e:
         st.error(f"⚠️ Error loading image: {e}")
         st.stop()
