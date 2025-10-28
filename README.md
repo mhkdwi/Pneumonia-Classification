@@ -41,4 +41,4 @@ During deployment, it is loaded using the `keras.layers.TFSMLayer` API for effic
 
 ## Deployment
 
-pneumonia-classification-mhk.streamlit.app
+[Pneumonia Detection App](https://pneumonia-classification-mhk.streamlit.app/)
