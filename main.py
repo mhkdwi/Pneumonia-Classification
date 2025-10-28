@@ -41,8 +41,17 @@ with open('./model/labels.txt', 'r') as f:
 uploaded_file = st.file_uploader("", type=['jpeg', 'jpg', 'png'])
 
 if uploaded_file is not None:
-    image = Image.open(uploaded_file).convert('RGB')
-    st.image(image, caption="Preview", use_container_width=True)
+    # Pastikan pointer file ke awal (kadang di Streamlit Cloud pointer sudah terbaca separuh)
+    uploaded_file.seek(0)
+
+    try:
+        # Buka gambar pakai PIL
+        image = Image.open(uploaded_file).convert('RGB')
+        st.image(np.array(image), caption="Preview", use_container_width=True)
+    except Exception as e:
+        st.error(f"⚠️ Error loading image: {e}")
+        st.stop()
+
 
     with st.spinner("🔍 Classifying... please wait..."):
         # Prediksi
