@@ -36,3 +36,9 @@ The model (`pneumonia_model_tf`) was trained to classify chest X-ray images into
 
 It uses convolutional neural networks (CNNs) trained on a labeled dataset of X-ray images.  
 During deployment, it is loaded using the `keras.layers.TFSMLayer` API for efficient inference.
+
+---
+
+## Deployment
+
+pneumonia-classification-mhk.streamlit.app
