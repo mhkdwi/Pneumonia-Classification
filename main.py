@@ -8,7 +8,7 @@ from util import classify, set_background
 st.set_page_config(page_title="Pneumonia Classifier", page_icon="🩺", layout="centered")
 
 # ---- Background ----
-set_background('./bgs/bg.jpg')
+set_background('./bgs/bermix-studio-p33-JPlv55g-unsplash.jpg')
 
 # ---- Header ----
 st.markdown(
