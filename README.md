@@ -1,18 +1,18 @@
-# 🩺 Pneumonia Detection Web App
+# Pneumonia Detection Web App
 
 A **Streamlit-based web application** for detecting **Pneumonia** from chest X-ray images using a pre-trained deep learning model (TensorFlow/Keras).  
 This app allows users to upload an X-ray image, process it, and get a prediction result — whether the patient is likely to have **Pneumonia** or not — along with the model’s confidence score.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🧠 **Deep Learning Model** trained with TensorFlow/Keras for pneumonia classification  
-- 🖼️ **Image Upload & Preview** — supports `.jpg`, `.jpeg`, and `.png` formats  
-- 📊 **Prediction Results** — shows the predicted class and confidence percentage  
-- 🎨 **Custom UI** built with Streamlit and HTML/CSS for a clean user interface  
-- ⚡ **Fast Inference** with TensorFlow SavedModel (via `TFSMLayer`)  
-- ☁️ **Deployable on Streamlit Cloud** or any Python web environment  
+- **Deep Learning Model** trained with TensorFlow/Keras for pneumonia classification  
+- **Image Upload & Preview** — supports `.jpg`, `.jpeg`, and `.png` formats  
+- **Prediction Results** — shows the predicted class and confidence percentage  
+- **Custom UI** built with Streamlit and HTML/CSS for a clean user interface  
+- **Fast Inference** with TensorFlow SavedModel (via `TFSMLayer`)  
+- **Deployable on Streamlit Cloud** or any Python web environment  
 
 ---
 
@@ -28,7 +28,7 @@ This app allows users to upload an X-ray image, process it, and get a prediction
 
 ---
 
-## 🧠 Model Information
+## Model Information
 
 The model (`pneumonia_model_tf`) was trained to classify chest X-ray images into:
 - **Normal**
