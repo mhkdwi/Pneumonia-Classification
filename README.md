@@ -16,7 +16,7 @@ This app allows users to upload an X-ray image, process it, and get a prediction
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 | Component | Technology Used |
 |------------|----------------|
